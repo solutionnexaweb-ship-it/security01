@@ -465,6 +465,19 @@ body.dark-theme .floating-card {
     scroll-behavior: smooth;
 }
 
+.about-section .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-image-container {
+    order: 1;
+}
+
+.about-content {
+    order: 2;
+}
+
 .about-image-wrapper {
     position: relative;
     display: inline-block;
