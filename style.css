@@ -391,105 +391,126 @@ p {
   border-color: var(--secondary-color);
 }
 
-/* ===================================
-   FOOTER STYLES
-   =================================== */
+/* ===============================
+   FOOTER MODERN DESIGN
+================================= */
 .footer {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
+  background: var(--bg-light);
   padding: 4rem 0 2rem;
-  color: var(--text-dark);
   border-top: 1px solid var(--bg-lighter);
+  transition: var(--transition);
 }
 
+/* Dark mode */
 body.dark-theme .footer {
-  background: rgba(15, 23, 42, 0.9);
-  border-top-color: var(--bg-lighter);
-  color: var(--text-light);
+  background: #0f172a;
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.footer .footer-brand h5 {
+/* Brand */
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary-color);
 }
 
-.footer .social-icons a {
-  margin-right: 0.75rem;
+/* Description */
+.footer-desc {
+  margin-top: 1rem;
   color: var(--text-muted);
-  transition: var(--transition);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
-.footer .social-icons a:hover {
-  color: var(--primary-color);
-  transform: translateY(-2px);
+/* Titles */
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
 }
 
-.footer .footer-links li a {
+body.dark-theme .footer-title {
+  color: var(--text-light);
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
   color: var(--text-muted);
-  transition: var(--transition);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
 }
 
-.footer .footer-links li a:hover {
+.footer-links a:hover {
   color: var(--primary-color);
-  text-decoration: underline;
+  padding-left: 5px;
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-lighter);
+  color: var(--text-muted);
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Contact text */
+.footer p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer i {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid var(--bg-lighter);
+  padding-top: 1.5rem;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 0.875rem;
-}
-
-.footer-bottom .footer-link-bottom {
-  color: var(--text-muted);
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  transition: var(--transition);
-}
-
-.footer-bottom .footer-link-bottom:hover {
-  color: var(--primary-color);
-}
-
-.btn-outline-primary {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.btn-lg {
-  padding: 0.875rem 2rem;
-  font-size: 1.05rem;
-}
-
-.btn-sm {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-}
-
-.btn-light:hover {
-  background-color: white;
-  transform: translateY(-2px);
-}
-
-.badge {
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
   font-size: 0.85rem;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  color: var(--text-muted);
 }
 
-.bg-primary-light {
-  background-color: var(--primary-light) !important;
-  color: var(--primary-color) !important;
+.footer-bottom a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: var(--primary-color);
 }
 
 /* ===================================
